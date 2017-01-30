@@ -1,0 +1,4 @@
+#!/bin/bash
+echo 'Killing process on 7777 port'
+kill $(lsof -t -i:7777)
+./manage.py runserver 7777

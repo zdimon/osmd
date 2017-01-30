@@ -1,0 +1,10 @@
+{
+  "name": "osmd",
+  "version": "0.0.1",
+  "author": "zdimon77@gmail.com",
+  "description": "blabla",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

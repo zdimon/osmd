@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ page.meta_title }} {% endblock %}
+{% block keywords %} {{ page.meta_keywords }} {% endblock %}
+{% block description %} {{ page.meta_description }} {% endblock %}
+
+{% block content %}
+    <h1>{{ subject.title }}</h1>
+
+        {% for i in  subject.photo_set.all %}
+
+            <p><img width="800" src="{{ i.image.url }}"  class="img-rounded"></p>
+
+        {% endfor %}
+
+        {{ page.content | safe }}
+{% endblock %}

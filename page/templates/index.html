@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ page.meta_title }} {% endblock %}
+{% block keywords %} {{ page.meta_keywords }} {% endblock %}
+{% block description %} {{ page.meta_description }} {% endblock %}
+
+{% block content %}
+    <h1>{{ page.title }}</h1>
+
+        {% for s in  subjects %}
+
+            <h3><a href="{% url 'subject' id=s.id %}"> {{ s }} </a></h3>
+
+        {% endfor %}
+
+        {{ page.content | safe }}
+{% endblock %}
