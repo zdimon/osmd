@@ -1,5 +1,4 @@
 *.pyc
-local.py
 *~
 supervisord.log
 supervisord.pid
